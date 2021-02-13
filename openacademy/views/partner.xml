@@ -6,9 +6,7 @@
             <field name="res_model">res.partner.category</field>
             <field name="view_mode">tree,form</field>
         </record>
-        <menuitem id="contact_cat_menu" name="Contact Tags"
-                  parent="configuration_menu"
-                  action="contact_cat_list_action"/>
+        
 
         <record model="res.partner.category" id="teacher1">
             <field name="name">Teacher / Level 1</field>
@@ -16,7 +14,7 @@
         <record model="res.partner.category" id="teacher2">
             <field name="name">Teacher / Level 2</field>
         </record>
-        
+
         <!-- Add instructor field to existing view -->
         <record model="ir.ui.view" id="partner_instructor_form_view">
             <field name="name">partner.instructor</field>
@@ -44,5 +42,8 @@
         <menuitem id="contact_menu" name="Contacts"
                   parent="configuration_menu"
                   action="contact_list_action"/>
+        <!--<menuitem id="contact_cat_menu" name="Contact Tags"
+                  parent="configuration_menu"
+                  action="contact_cat_list_action"/>-->
 
 </odoo>
